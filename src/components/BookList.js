@@ -1,3 +1,5 @@
+import { connect } from 'react-redux';
+
 const BookList = () => (
   <div>
     <table>
@@ -12,8 +14,17 @@ const BookList = () => (
           Category
         </th>
       </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sample book</td>
+          <td>Tech books</td>
+        </tr>
+      </tbody>
     </table>
   </div>
 );
 
-export default BookList;
+const mapStateToProps = state => ({ books: state.books });
+
+export default connect(mapStateToProps, null)(BookList);
