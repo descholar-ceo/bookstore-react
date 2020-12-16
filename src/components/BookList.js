@@ -1,8 +1,10 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Book from './Book';
 
 const BookList = ({ books }) => {
-  const { bookId, bookTitle, bookCategory } = books;
+  const bookRows = books.map(book => (<Book key={`book-number-${book.bookId}`} book={book} />));
+
   return (
     <div>
       <table>
@@ -18,11 +20,7 @@ const BookList = ({ books }) => {
           </th>
         </thead>
         <tbody>
-          <tr>
-            <td>{bookId}</td>
-            <td>{bookTitle}</td>
-            <td>{bookCategory}</td>
-          </tr>
+          {bookRows}
         </tbody>
       </table>
     </div>
@@ -31,7 +29,7 @@ const BookList = ({ books }) => {
 
 BookList.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  books: PropTypes.object.isRequired,
+  books: PropTypes.array.isRequired,
 };
 
 const mapStateToProps = state => ({ books: state.books });
