@@ -3,12 +3,13 @@ const BooksForm = () => {
   const categoryCollection = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <div>
+      <h2>Create a book</h2>
       <form>
         <input name="book-title" id="book-title" type="text" placeholder="Enter the title of a book" />
         <select name="book-categoy" id="book-category">
-          <option value="">---Select the book category---</option>
+          <option value="default">---Select the book category---</option>
         </select>
-        <button type="button">Save book</button>
+        <button type="submit">Save book</button>
       </form>
     </div>
   );
