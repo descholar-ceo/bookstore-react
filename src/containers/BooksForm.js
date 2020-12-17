@@ -6,7 +6,7 @@ const BooksForm = () => {
       <h2>Create a book</h2>
       <form>
         <input name="book-title" id="book-title" type="text" placeholder="Enter the title of a book" />
-        <select name="book-categoy" id="book-category">
+        <select name="book-category" id="book-category">
           <option value="default">---Select the book category---</option>
         </select>
         <button type="submit">Save book</button>
