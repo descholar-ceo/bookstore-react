@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
+import {createBookAction, removeBookAction} from '../actions/bookActions';
 
 const BookList = ({ books }) => {
   const bookRows = books.map(book => (<Book key={`book-number-${book.bookId}`} book={book} />));
@@ -32,6 +33,10 @@ BookList.propTypes = {
   books: PropTypes.array.isRequired,
 };
 
-const mapStateToProps = state => ({ books: state.books });
+const mapStateToProps = state => ({ books: state.bookReducer });
+const mapDispatchToProps = dispatch => ({
+  createBook: book => dispatch(createBookAction(book)),
+  removeBook: bookId => dispatch(removeBookAction(bookId)),
+});
 
-export default connect(mapStateToProps, null)(BookList);
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);
