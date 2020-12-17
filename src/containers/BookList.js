@@ -29,8 +29,7 @@ const BookList = ({ books }) => {
 };
 
 BookList.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  books: PropTypes.array.isRequired,
+  books: PropTypes.arrayOf.isRequired,
 };
 
 const mapStateToProps = state => ({ books: state.bookReducer.books });

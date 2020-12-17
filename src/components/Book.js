@@ -12,8 +12,7 @@ const Book = ({ book }) => {
 };
 
 Book.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  book: PropTypes.object.isRequired,
+  book: PropTypes.objectOf.isRequired,
 };
 
 export default Book;
