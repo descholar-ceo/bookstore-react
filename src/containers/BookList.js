@@ -36,7 +36,7 @@ BookList.propTypes = {
 const mapStateToProps = state => ({ books: state.bookReducer.books });
 const mapDispatchToProps = dispatch => ({
   createBook: book => dispatch(createBookAction(book)),
-  removeBook: bookId => dispatch(removeBookAction(bookId)),
+  removeBook: book => dispatch(removeBookAction(book)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
