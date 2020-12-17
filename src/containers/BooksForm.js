@@ -4,8 +4,8 @@ const BooksForm = () => {
   return (
     <div>
       <form>
-        <input type="text" placeholder="Enter the name of a book" />
-        <select>
+        <input name="book-title" id="book-title" type="text" placeholder="Enter the title of a book" />
+        <select name="book-categoy" id="book-category">
           <option value="">---Select the book category---</option>
         </select>
         <button type="button">Save book</button>
