@@ -5,6 +5,7 @@ const BooksForm = () => (
       <select>
         <option value="">---Select the book category---</option>
       </select>
+      <button type="button">Save book</button>
     </form>
   </div>
 );
