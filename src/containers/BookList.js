@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import {createBookAction, removeBookAction} from '../actions/bookActions';
+import { createBookAction, removeBookAction } from '../actions/bookActions';
 
 const BookList = ({ books }) => {
   const bookRows = books.map(book => (<Book key={`book-number-${book.bookId}`} book={book} />));
