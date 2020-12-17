@@ -1,9 +1,11 @@
-import { Fragment } from 'react';
+import BookList from '../containers/BookList';
+import BooksForm from '../containers/BooksForm';
 
 const App = () => (
-  <Fragment className="App">
-    <h1>Hello, Welcome to the Bookstore project developed with react && redux</h1>
-  </Fragment>
+  <div className="App">
+    <BookList />
+    <BooksForm />
+  </div>
 );
 
 export default App;
