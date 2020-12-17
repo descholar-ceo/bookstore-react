@@ -4,6 +4,7 @@ import Book from '../components/Book';
 import { createBookAction, removeBookAction } from '../actions';
 
 const BookList = ({ books }) => {
+  console.log(books);
   const bookRows = books.map(book => (<Book key={`book-number-${book.bookId}`} book={book} />));
 
   return (
