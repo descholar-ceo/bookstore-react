@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import randomIdGenerator from '../helpers/randomId';
 import { createBookAction } from '../redux/actions';
+import categoriesOptions from '../helpers/categoriesList';
 
 const BooksForm = ({ createBook }) => {
   const [state, setState] = useState({ bookTitle: '', bookCategory: '' });
@@ -32,6 +33,7 @@ const BooksForm = ({ createBook }) => {
           name="bookCategory"
         >
           <option value="default">---Select the book category---</option>
+          {categoriesOptions}
         </select>
         <button type="submit">Save book</button>
       </form>
