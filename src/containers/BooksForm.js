@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 const BooksForm = () => {
+  const [state, setState] = useState({ bookTitle: 'default book', bookCategory: 'novel' });
   // eslint-disable-next-line no-unused-vars
   const categoryCollection = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
