@@ -2,21 +2,15 @@ import randomIdGenerator from '../../helpers/randomId';
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/actionsTypes';
 
 const initialState = {
-  books: [
-    { bookId: randomIdGenerator(), bookTitle: 'Programming in Java', bookCategory: 'Programming' },
-    { bookId: randomIdGenerator(), bookTitle: 'Poor dad and rich dad', bookCategory: 'Finance' },
-    { bookId: randomIdGenerator(), bookTitle: 'Rails and React', bookCategory: 'Programming' },
-    { bookId: randomIdGenerator(), bookTitle: 'Everything on Robotics', bookCategory: 'Science' },
-    { bookId: randomIdGenerator(), bookTitle: 'Big Data', bookCategory: 'Datascience' },
-  ],
+  books: { bookId: randomIdGenerator(), bookTitle: 'Programming in Java', bookCategory: 'Programming' },
 };
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case CREATE_BOOK:
-      return { ...state, books: action.payload };
+      return { ...state, books: action.book };
     case REMOVE_BOOK:
-      return { ...state, removedBook: action.payload };
+      return { ...state, removedBook: action.book };
     default:
       return state;
   }
