@@ -1,12 +1,13 @@
+import randomIdGenerator from '../../helpers/randomId';
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/actionsTypes';
 
 const initialState = {
   books: [
-    { bookId: Math.floor((Math.random() * 100)), bookTitle: 'Programming in Java', bookCategory: 'Programming' },
-    { bookId: Math.floor((Math.random() * 100)), bookTitle: 'Poor dad and rich dad', bookCategory: 'Finance' },
-    { bookId: Math.floor((Math.random() * 100)), bookTitle: 'Rails and React', bookCategory: 'Programming' },
-    { bookId: Math.floor((Math.random() * 100)), bookTitle: 'Everything on Robotics', bookCategory: 'Science' },
-    { bookId: Math.floor((Math.random() * 100)), bookTitle: 'Big Data', bookCategory: 'Datascience' },
+    { bookId: randomIdGenerator(), bookTitle: 'Programming in Java', bookCategory: 'Programming' },
+    { bookId: randomIdGenerator(), bookTitle: 'Poor dad and rich dad', bookCategory: 'Finance' },
+    { bookId: randomIdGenerator(), bookTitle: 'Rails and React', bookCategory: 'Programming' },
+    { bookId: randomIdGenerator(), bookTitle: 'Everything on Robotics', bookCategory: 'Science' },
+    { bookId: randomIdGenerator(), bookTitle: 'Big Data', bookCategory: 'Datascience' },
   ],
 };
 
