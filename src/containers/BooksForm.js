@@ -16,8 +16,7 @@ const BooksForm = ({ createBook }) => {
     });
     setState({ bookTitle: '', bookCategory: '' });
   };
-  // eslint-disable-next-line no-unused-vars
-  const categoryCollection = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+
   return (
     <div>
       <h2>Create a book</h2>
