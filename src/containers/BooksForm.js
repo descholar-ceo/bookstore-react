@@ -5,7 +5,7 @@ import randomIdGenerator from '../helpers/randomId';
 import { createBookAction } from '../redux/actions';
 
 const BooksForm = ({ createBook }) => {
-  const [state, setState] = useState({ bookTitle: 'default book', bookCategory: 'novel' });
+  const [state, setState] = useState({ bookTitle: '', bookCategory: '' });
   const handleChange = ({ target: { name, value } }) => setState({ [name]: value });
   const handleSubmit = event => {
     event.preventDefault();
@@ -14,6 +14,7 @@ const BooksForm = ({ createBook }) => {
       bookTitle: state.bookTitle,
       bookCategory: state.bookCategory,
     });
+    setState({ bookTitle: '', bookCategory: '' });
   };
   // eslint-disable-next-line no-unused-vars
   const categoryCollection = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
