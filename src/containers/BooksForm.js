@@ -6,16 +6,21 @@ import { createBookAction } from '../redux/actions';
 import categoriesOptions from '../helpers/categoriesList';
 
 const BooksForm = ({ createBook }) => {
-  const [state, setState] = useState({ bookTitle: '', bookCategory: '' });
-  const handleChange = ({ target: { name, value } }) => setState({ [name]: value });
+  const [bookTitle, setBookTitle] = useState({ bookTitle: '' });
+  const [bookCategory, setBookCategory] = useState({ bookCategory: '' });
+  const handleChange = ({ target: { name, value } }) => {
+    if (name === 'bookTitle') setBookTitle(value);
+    if (name === 'bookCategory') setBookCategory(value);
+  };
   const handleSubmit = event => {
     event.preventDefault();
     createBook({
       bookId: randomIdGenerator(),
-      bookTitle: state.bookTitle,
-      bookCategory: state.bookCategory,
+      bookTitle,
+      bookCategory,
     });
-    setState({ bookTitle: '', bookCategory: '' });
+    setBookTitle({ bookTitle: '' });
+    setBookCategory({ bookCategory: '' });
   };
 
   return (
