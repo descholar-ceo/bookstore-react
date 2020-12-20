@@ -10,12 +10,13 @@ const BooksForm = ({ createBook }) => {
   const handleChange = ({ target: { name, value } }) => {
     setState({ ...state, [name]: value });
   };
+  const { bookTitle, bookCategory } = state;
   const handleSubmit = event => {
     event.preventDefault();
     createBook({
       bookId: randomIdGenerator(),
-      bookTitle: state.bookTitle,
-      bookCategory: state.bookCategory,
+      bookTitle,
+      bookCategory,
     });
     setState({ bookTitle: '', bookCategory: '' });
   };
