@@ -8,18 +8,20 @@ const BookList = ({ books }) => {
     <div>
       <table>
         <thead>
-          <th>
-            Book ID
-          </th>
-          <th>
-            Title
-          </th>
-          <th>
-            Category
-          </th>
-          <th>
-            Action
-          </th>
+          <tr>
+            <th>
+              Book ID
+            </th>
+            <th>
+              Title
+            </th>
+            <th>
+              Category
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
         </thead>
         <tbody>
           {bookRows}
