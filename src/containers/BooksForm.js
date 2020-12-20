@@ -29,10 +29,14 @@ const BooksForm = ({ createBook }) => {
           name="bookTitle"
           type="text"
           placeholder="Enter the title of a book"
+          value={state.bookTitle}
+          required
         />
         <select
           onChange={event => handleChange(event)}
           name="bookCategory"
+          value={state.bookCategory}
+          required
         >
           <option value="default">---Select the book category---</option>
           {categoriesOptions}
