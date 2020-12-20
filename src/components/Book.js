@@ -17,9 +17,9 @@ const Book = ({ book, removeBook }) => {
 
 Book.propTypes = {
   book: PropTypes.shape({
-    bookId: PropTypes.number.isRequired,
-    bookTitle: PropTypes.string.isRequired,
-    bookCategory: PropTypes.string.isRequired,
+    bookId: PropTypes.number,
+    bookTitle: PropTypes.string,
+    bookCategory: PropTypes.string,
   }).isRequired,
   removeBook: PropTypes.func.isRequired,
 };
