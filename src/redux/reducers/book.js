@@ -1,4 +1,3 @@
-// import randomIdGenerator from '../../helpers/randomId';
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/actionsTypes';
 
 const initialState = {
