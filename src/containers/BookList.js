@@ -18,6 +18,9 @@ const BookList = ({ books }) => {
           <th>
             Category
           </th>
+          <th>
+            Action
+          </th>
         </thead>
         <tbody>
           {bookRows}
