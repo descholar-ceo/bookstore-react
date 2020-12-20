@@ -1,13 +1,46 @@
-const BooksForm = () => {
-  // eslint-disable-next-line no-unused-vars
-  const categoryCollection = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+import { useState } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import randomIdGenerator from '../helpers/randomId';
+import { createBookAction } from '../redux/actions';
+import categoriesOptions from '../helpers/categoriesList';
+
+const BooksForm = ({ createBook }) => {
+  const [state, setState] = useState({ bookTitle: '', bookCategory: '' });
+  const handleChange = ({ target: { name, value } }) => {
+    setState({ ...state, [name]: value });
+  };
+  const { bookTitle, bookCategory } = state;
+  const handleSubmit = event => {
+    event.preventDefault();
+    createBook({
+      bookId: randomIdGenerator(),
+      bookTitle,
+      bookCategory,
+    });
+    setState({ bookTitle: '', bookCategory: '' });
+  };
+
   return (
     <div>
       <h2>Create a book</h2>
-      <form>
-        <input name="book-title" id="book-title" type="text" placeholder="Enter the title of a book" />
-        <select name="book-category" id="book-category">
+      <form onSubmit={event => handleSubmit(event)}>
+        <input
+          onChange={event => handleChange(event)}
+          name="bookTitle"
+          type="text"
+          placeholder="Enter the title of a book"
+          value={state.bookTitle}
+          required
+        />
+        <select
+          onChange={event => handleChange(event)}
+          name="bookCategory"
+          value={state.bookCategory}
+          required
+        >
           <option value="default">---Select the book category---</option>
+          {categoriesOptions}
         </select>
         <button type="submit">Save book</button>
       </form>
@@ -15,4 +48,10 @@ const BooksForm = () => {
   );
 };
 
-export default BooksForm;
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({ createBook: book => dispatch(createBookAction(book)) });
+
+export default connect(null, mapDispatchToProps)(BooksForm);
