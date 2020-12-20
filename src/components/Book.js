@@ -1,19 +1,25 @@
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { removeBookAction } from '../redux/actions';
 
-const Book = ({ book }) => {
+const Book = ({ book, removeBook }) => {
+  const handleRemoveBook = book => removeBook(book);
   const { bookId, bookTitle, bookCategory } = book;
   return (
     <tr>
       <td>{bookId}</td>
       <td>{bookTitle}</td>
       <td>{bookCategory}</td>
-      <td><button type="button">Delete</button></td>
+      <td><button onClick={() => handleRemoveBook(book)} type="button">Delete</button></td>
     </tr>
   );
 };
 
 Book.propTypes = {
   book: PropTypes.objectOf.isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
-export default Book;
+const mapDispatchToProps = dispatch => ({ removeBook: book => dispatch(removeBookAction(book)) });
+
+export default connect(null, mapDispatchToProps)(Book);
