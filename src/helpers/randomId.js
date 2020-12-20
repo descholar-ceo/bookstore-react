@@ -1,3 +1,5 @@
-const randomIdGenerator = () => Math.floor((Math.random() * 100));
+import shortid from 'shortid';
+
+const randomIdGenerator = () => shortid.generate();
 
 export default randomIdGenerator;
