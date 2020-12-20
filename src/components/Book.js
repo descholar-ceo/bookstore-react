@@ -14,7 +14,7 @@ const Book = ({ book, deleteAction }) => {
 
 Book.propTypes = {
   book: PropTypes.shape({
-    bookId: PropTypes.number,
+    bookId: PropTypes.string,
     bookTitle: PropTypes.string,
     bookCategory: PropTypes.string,
   }).isRequired,
