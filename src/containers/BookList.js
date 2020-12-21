@@ -23,7 +23,7 @@ const BookList = ({
       <div>
         <div className="nav">
           <div className="nav-left">
-            <h1>BookStore CMS</h1>
+            <h1 className="blue-text">BookStore CMS</h1>
             <h3>Books</h3>
             <h3>Categories</h3>
             <CategoryFilter handleFilterChange={handleFilterChange} />
