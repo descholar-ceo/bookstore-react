@@ -13,3 +13,12 @@
 .display-flex {
   display: flex;
 }
+
+.primary-btn {
+  text-transform: uppercase;
+  background-color: $blue-color;
+  color: #fff;
+  font-size: 0.7rem;
+  width: 50%;
+  border-radius: 0.2rem;
+}

@@ -9,11 +9,11 @@ const Book = ({ book, deleteAction }) => {
         <h1 className="book-title">{bookTitle}</h1>
         <h3 className="blue-text author">Suzanne Collins</h3>
         <div>
-          <button className="blue-text" type="submit">Comments</button>
+          <button className="blue-text option-btn" type="submit">Comments</button>
           <p className="p-vertical">|</p>
-          <button className="blue-text" onClick={deleteAction} type="button">Remove</button>
+          <button className="blue-text option-btn" onClick={deleteAction} type="button">Remove</button>
           <p className="p-vertical">|</p>
-          <button className="blue-text" type="submit">Edit</button>
+          <button className="blue-text option-btn" type="submit">Edit</button>
         </div>
       </td>
       <td className="display-grid centered-content td-middle">
@@ -26,7 +26,7 @@ const Book = ({ book, deleteAction }) => {
       <td className="display-grid td-rightmost">
         <h2 className="current-chapter-container">Current Chapter</h2>
         <h3>Chapter 17</h3>
-        <button type="button">Update Progress</button>
+        <button className="primary-btn" type="button">Update Progress</button>
       </td>
     </tr>
   );

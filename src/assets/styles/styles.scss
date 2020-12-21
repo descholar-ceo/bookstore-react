@@ -76,6 +76,10 @@ table {
   font-size: 1.6rem;
 }
 
+.option-btn {
+  background-color: #fff;
+}
+
 .author {
   margin-top: 0.3rem;
 }
@@ -153,15 +157,6 @@ table {
     text-transform: uppercase;
     color: #8a8888;
     font-size: 0.9rem;
-  }
-
-  button {
-    text-transform: uppercase;
-    background-color: $blue-color;
-    color: #fff;
-    font-size: 0.7rem;
-    width: 50%;
-    border-radius: 0.2rem;
   }
 }
 
