@@ -4,10 +4,13 @@ import Book from '../components/Book';
 import { changeFilter, removeBookAction } from '../redux/actions';
 import CategoryFilter from '../components/CategoryFilter';
 
-const BookList = ({ books, removeBook, changeFilter }) => {
+const BookList = ({
+  books, removeBook, filter, changeFilter,
+}) => {
   const handleRemoveBook = book => removeBook(book);
   const handleFilterChange = event => changeFilter(event.target.value);
-  const bookRows = books.map(book => (
+  const booksToDisplay = filter === 'All' ? books : books.filter(book => book.category === filter);
+  const bookRows = booksToDisplay.map(book => (
     <Book
       key={`book-number-${book.bookId}`}
       book={book}
@@ -44,6 +47,7 @@ const BookList = ({ books, removeBook, changeFilter }) => {
 BookList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
   removeBook: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
   changeFilter: PropTypes.func.isRequired,
 };
 
