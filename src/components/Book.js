@@ -3,19 +3,17 @@ import PropTypes from 'prop-types';
 const Book = ({ book, deleteAction }) => {
   const { bookTitle, bookCategory } = book;
   return (
-    <tr>
-      <td>
+    <tr className="display-grid">
+      <td className="display-grid td-leftmost">
         <h2 className="book-category">{bookCategory}</h2>
         <h1 className="book-title">{bookTitle}</h1>
-        <span>Author</span>
+        <h3 className="blue-text author">Suzanne Collins</h3>
         <div>
-          <button type="submit">Comments</button>
-          {' '}
-          |
-          <button onClick={deleteAction} type="button">Delete</button>
-          {' '}
-          |
-          <button type="submit">Edit</button>
+          <button className="blue-text" type="submit">Comments</button>
+          <p className="p-vertical">|</p>
+          <button className="blue-text" onClick={deleteAction} type="button">Delete</button>
+          <p className="p-vertical">|</p>
+          <button className="blue-text" type="submit">Edit</button>
         </div>
       </td>
       <td>

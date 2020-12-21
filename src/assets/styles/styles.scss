@@ -43,6 +43,7 @@ tr {
   margin: 1rem 0 1rem 0;
   display: block;
   padding: 1rem;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
 hr {
@@ -54,6 +55,11 @@ hr {
 table {
   width: 80%;
   margin: 2rem auto;
+}
+
+.td-leftmost {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 0.2rem;
 }
 
 .book-category {
@@ -68,6 +74,16 @@ table {
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
+}
+
+.author {
+  margin-top: 0.3rem;
+}
+
+.p-vertical {
+  color: #e8e8e8;
+  display: inline;
+  margin: 0 1rem 0 1rem;
 }
 
 @import 'utilities';
