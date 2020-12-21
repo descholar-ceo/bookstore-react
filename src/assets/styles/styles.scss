@@ -6,3 +6,27 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
+
+.nav {
+  display: grid;
+  grid-template-columns: 6fr 0.5fr;
+  margin: 1rem;
+
+  .nav-left {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #2ea3ff;
+      margin-right: 0.7rem;
+    }
+
+    h3 {
+      margin-right: 0.7rem;
+    }
+  }
+}

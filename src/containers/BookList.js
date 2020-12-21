@@ -21,8 +21,8 @@ const BookList = ({
   return (
     <div>
       <div>
-        <nav>
-          <div>
+        <div className="nav">
+          <div className="nav-left">
             <h1>BookStore CMS</h1>
             <h3>Books</h3>
             <h3>Categories</h3>
@@ -31,7 +31,7 @@ const BookList = ({
           <div>
             <FaUser />
           </div>
-        </nav>
+        </div>
       </div>
       <table>
         <thead>
