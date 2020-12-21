@@ -5,7 +5,7 @@ const Book = ({ book, deleteAction }) => {
   return (
     <tr>
       <td>
-        <h2>{bookCategory}</h2>
+        <h2 className="book-category">{bookCategory}</h2>
         <h1>{bookTitle}</h1>
         <span>Author</span>
         <div>
