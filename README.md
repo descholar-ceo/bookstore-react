@@ -37,7 +37,7 @@ This app is deployed to [heroku](https://descholar-bookstore-react.herokuapp.com
 
 ## Authors
 
-👤 **Author1**
+👤 **Mugirase Emmanuel**
 
 - GitHub: [@Mugirase Emmanuel](https://github.com/descholar-ceo)
 - Twitter: [@Mugirase Emmanuel](https://twitter.com/descholar3)
