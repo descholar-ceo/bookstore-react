@@ -22,11 +22,15 @@ const BookList = ({
     <div>
       <div>
         <nav>
-          <h1>BookStore CMS</h1>
-          <h3>Books</h3>
-          <h3>Categories</h3>
-          <CategoryFilter handleFilterChange={handleFilterChange} />
-          <FaUser />
+          <div>
+            <h1>BookStore CMS</h1>
+            <h3>Books</h3>
+            <h3>Categories</h3>
+            <CategoryFilter handleFilterChange={handleFilterChange} />
+          </div>
+          <div>
+            <FaUser />
+          </div>
         </nav>
       </div>
       <table>
