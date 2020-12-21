@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { removeBookAction } from '../redux/actions';
+import { changeFilter, removeBookAction } from '../redux/actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BookList = ({ books, removeBook }) => {
@@ -45,8 +45,11 @@ BookList.propTypes = {
   removeBook: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({ books: state.books });
+const mapStateToProps = state => ({ books: state.books, filter: state.filter });
 
-const mapDispatchToProps = dispatch => ({ removeBook: book => dispatch(removeBookAction(book)) });
+const mapDispatchToProps = dispatch => ({
+  removeBook: book => dispatch(removeBookAction(book)),
+  changeFilter: filter => dispatch(changeFilter(filter)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
