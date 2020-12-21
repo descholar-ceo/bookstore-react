@@ -14,6 +14,7 @@ I developed this project as it was a required project in Microverse's React/Redu
 ## Live Demo
 
 [Live Demo Link](https://descholar-bookstore-react.herokuapp.com/)
+:warning: Note: :warning: If the link above doesn't work, kindly refresh the page, it will work.
 
 
 ## Getting Started
@@ -33,6 +34,7 @@ Run `yarn start` or `npm start`, the development server will start and the brows
 No tests yet
 ### Deployment
 This app is deployed to [heroku](https://descholar-bookstore-react.herokuapp.com/)
+:warning: Note: :warning: If the link above doesn't work, kindly refresh the page, it will work.
 
 
 ## Authors
