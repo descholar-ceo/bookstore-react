@@ -86,4 +86,59 @@ table {
   margin: 0 1rem 0 1rem;
 }
 
+.progress-container {
+  grid-template-columns: 2fr 1fr;
+
+  .percent-number {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .completed-text {
+    color: #9e9e9e;
+  }
+}
+
+.percent-circle {
+  width: $percent-circle-diameter;
+  height: $percent-circle-diameter;
+  border-radius: 50%;
+  background-color: $blue-color;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: $percent-circle-measures;
+    width: $percent-circle-measures;
+    line-height: $percent-circle-measures;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  @for $counter from 1 through 50 {
+    &.percent-circle-#{$counter} {
+      &::after {
+        content: "#{$counter}%";
+      }
+    }
+  }
+
+  @for $counter from 51 through 100 {
+    &.percent-circle-#{$counter} {
+      background-image:
+        linear-gradient(90deg, transparent 50%, $blue-color 50%),
+        linear-gradient(-90deg+(360*0.01*($counter - 50)), transparent 50%, #e8e8e8 50%);
+
+      &::after {
+        content: "";
+      }
+    }
+  }
+}
+
 @import 'utilities';

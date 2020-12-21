@@ -16,8 +16,12 @@ const Book = ({ book, deleteAction }) => {
           <button className="blue-text" type="submit">Edit</button>
         </div>
       </td>
-      <td>
-        <div>Progress</div>
+      <td className="display-grid centered-content progress-container">
+        <div className="percent-circle percent-circle-64" />
+        <div className="display-grid">
+          <h1 className="percent-number">64%</h1>
+          <h2 className="completed-text">Completed</h2>
+        </div>
       </td>
       <td>
         <div>
