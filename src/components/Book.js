@@ -11,7 +11,7 @@ const Book = ({ book, deleteAction }) => {
         <div>
           <button className="blue-text" type="submit">Comments</button>
           <p className="p-vertical">|</p>
-          <button className="blue-text" onClick={deleteAction} type="button">Delete</button>
+          <button className="blue-text" onClick={deleteAction} type="button">Remove</button>
           <p className="p-vertical">|</p>
           <button className="blue-text" type="submit">Edit</button>
         </div>
@@ -23,10 +23,10 @@ const Book = ({ book, deleteAction }) => {
           <h2 className="completed-text">Completed</h2>
         </div>
       </td>
-      <td>
-        <div>
-          Current chapter
-        </div>
+      <td className="display-grid td-rightmost">
+        <h2 className="current-chapter-container">Current Chapter</h2>
+        <h3>Chapter 17</h3>
+        <button type="button">Update Progress</button>
       </td>
     </tr>
   );

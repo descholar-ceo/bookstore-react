@@ -143,4 +143,26 @@ table {
   }
 }
 
+.td-rightmost {
+  padding-left: 2rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 1rem;
+  font-family: 'Roboto Slab', sans-serif;
+
+  .current-chapter-container {
+    text-transform: uppercase;
+    color: #8a8888;
+    font-size: 0.9rem;
+  }
+
+  button {
+    text-transform: uppercase;
+    background-color: $blue-color;
+    color: #fff;
+    font-size: 0.7rem;
+    width: 50%;
+    border-radius: 0.2rem;
+  }
+}
+
 @import 'utilities';
