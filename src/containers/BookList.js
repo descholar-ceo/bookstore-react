@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { FaUser } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { changeFilter, removeBookAction } from '../redux/actions';
@@ -19,7 +20,15 @@ const BookList = ({
   ));
   return (
     <div>
-      <CategoryFilter handleFilterChange={handleFilterChange} />
+      <div>
+        <nav>
+          <h1>BookStore CMS</h1>
+          <h3>Books</h3>
+          <h3>Categories</h3>
+          <CategoryFilter handleFilterChange={handleFilterChange} />
+          <FaUser />
+        </nav>
+      </div>
       <table>
         <thead>
           <tr>
