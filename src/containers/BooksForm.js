@@ -23,8 +23,8 @@ const BooksForm = ({ createBook }) => {
 
   return (
     <div>
-      <h2>Create a book</h2>
-      <form onSubmit={event => handleSubmit(event)}>
+      <h2 className="new-book-head">Add a new book</h2>
+      <form className="display-grid" onSubmit={event => handleSubmit(event)}>
         <input
           onChange={event => handleChange(event)}
           name="bookTitle"

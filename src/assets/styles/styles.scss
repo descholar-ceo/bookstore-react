@@ -52,7 +52,9 @@ hr {
   margin: 2rem auto;
 }
 
-table {
+table,
+form,
+.new-book-head {
   width: 80%;
   margin: 2rem auto;
 }
@@ -158,6 +160,18 @@ table {
     color: #8a8888;
     font-size: 0.9rem;
   }
+}
+
+.new-book-head {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #8a8888;
+  text-transform: uppercase;
+}
+
+form {
+  grid-template-columns: 2fr 1fr 0.5fr;
+  column-gap: 1rem;
 }
 
 @import 'utilities';
