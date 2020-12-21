@@ -5,7 +5,7 @@ const CategoryFilter = ({ handleFilterChange }) => (
   <div>
     <span>Filter books by: </span>
     <select onChange={handleFilterChange}>
-      <option value="all">All</option>
+      <option value="All">All</option>
       {categoriesOptions}
     </select>
   </div>

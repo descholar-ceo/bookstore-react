@@ -9,7 +9,7 @@ const BookList = ({
 }) => {
   const handleRemoveBook = book => removeBook(book);
   const handleFilterChange = event => changeFilter(event.target.value);
-  const booksToDisplay = filter === 'All' ? books : books.filter(book => book.category === filter);
+  const booksToDisplay = filter === 'All' ? books : books.filter(book => book.bookCategory === filter);
   const bookRows = booksToDisplay.map(book => (
     <Book
       key={`book-number-${book.bookId}`}

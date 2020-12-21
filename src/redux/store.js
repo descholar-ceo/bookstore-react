@@ -9,8 +9,10 @@ const middlewareEnhancer = applyMiddleware(...middleware);
 
 const initialState = {
   books: [
-    { bookId: randomIdGenerator(), bookTitle: 'Programming in Java', bookCategory: 'Programming' },
-    { bookId: randomIdGenerator(), bookTitle: 'Programming in Ruby', bookCategory: 'Learning' },
+    { bookId: randomIdGenerator(), bookTitle: 'The age of Robotics', bookCategory: 'Sci-Fi' },
+    { bookId: randomIdGenerator(), bookTitle: 'Programming in Java', bookCategory: 'Learning' },
+    { bookId: randomIdGenerator(), bookTitle: 'Benito Musolin', bookCategory: 'Biography' },
+    { bookId: randomIdGenerator(), bookTitle: 'The Raise of a green dragon', bookCategory: 'History' },
   ],
   filter: 'All',
 };
