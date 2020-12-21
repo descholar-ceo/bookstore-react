@@ -20,7 +20,7 @@ const BookList = ({
   ));
   return (
     <div>
-      <div>
+      <div className="header">
         <div className="nav display-grid">
           <div className="nav-left display-flex centered-content">
             <h1 className="blue-text">BookStore CMS</h1>

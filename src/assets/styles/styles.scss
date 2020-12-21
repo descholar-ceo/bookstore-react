@@ -8,10 +8,19 @@
   font-family: 'Roboto Slab', serif;
 }
 
+body {
+  background-color: #f2f3f7;
+}
+
+.header {
+  background-color: #fff;
+  padding: 0.7rem;
+  border-bottom: solid 1px #e8e8e8;
+}
+
 .nav {
   grid-template-columns: 6fr 0.5fr;
   margin: 1rem;
-  border-bottom: solid 1px #e8e8e8;
   padding-bottom: 1rem;
 
   .nav-user-container {
@@ -33,7 +42,7 @@
     }
 
     h4 {
-      margin-right: 0.7rem;
+      margin-right: 0.9rem;
     }
   }
 }
@@ -44,6 +53,7 @@ tr {
   display: block;
   padding: 1rem;
   grid-template-columns: 1.5fr 1fr 1fr;
+  background-color: #fff;
 }
 
 hr {
