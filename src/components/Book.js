@@ -6,7 +6,7 @@ const Book = ({ book, deleteAction }) => {
     <tr>
       <td>
         <h2 className="book-category">{bookCategory}</h2>
-        <h1>{bookTitle}</h1>
+        <h1 className="book-title">{bookTitle}</h1>
         <span>Author</span>
         <div>
           <button type="submit">Comments</button>
