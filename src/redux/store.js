@@ -12,6 +12,7 @@ const initialState = {
     { bookId: randomIdGenerator(), bookTitle: 'Programming in Java', bookCategory: 'Programming' },
     { bookId: randomIdGenerator(), bookTitle: 'Programming in Ruby', bookCategory: 'Learning' },
   ],
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, initialState, composeWithDevTools(middlewareEnhancer));
