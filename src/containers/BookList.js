@@ -21,15 +21,15 @@ const BookList = ({
   return (
     <div>
       <div>
-        <div className="nav">
-          <div className="nav-left">
+        <div className="nav display-grid">
+          <div className="nav-left display-flex centered-content">
             <h1 className="blue-text">BookStore CMS</h1>
-            <h3>Books</h3>
-            <h3>Categories</h3>
+            <h4>Books</h4>
+            <h4>Categories</h4>
             <CategoryFilter handleFilterChange={handleFilterChange} />
           </div>
-          <div>
-            <FaUser />
+          <div className="display-grid centered-content nav-user-container">
+            <FaUser className="blue-text" />
           </div>
         </div>
       </div>
