@@ -1,5 +1,5 @@
 # Bookstore
-
+![Linters](https://github.com/descholar-ceo/bookstore-react/workflows/Linters/badge.svg)
 > A simple bookstore management with React/Redux
 
 ![bookstore screenshot](./src/assets/images/bookstore-react-png.png)
