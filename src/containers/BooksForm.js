@@ -42,7 +42,7 @@ const BooksForm = ({ createBook }) => {
           <option value="default">---Select the book category---</option>
           {categoriesOptions}
         </select>
-        <button type="submit">Save book</button>
+        <button className="primary-btn" type="submit">Save book</button>
       </form>
     </div>
   );
