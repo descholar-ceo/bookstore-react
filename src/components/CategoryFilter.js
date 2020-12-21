@@ -1,10 +1,13 @@
 import categoriesOptions from '../helpers/categoriesList';
 
 const CategoryFilter = () => (
-  <select name="category">
-    <option value="">---Select category---</option>
-    {categoriesOptions}
-  </select>
+  <div>
+    <span>Filter books by: </span>
+    <select name="category">
+      <option value="all">All</option>
+      {categoriesOptions}
+    </select>
+  </div>
 );
 
 export default CategoryFilter;
