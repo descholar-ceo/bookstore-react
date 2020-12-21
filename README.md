@@ -2,7 +2,7 @@
 
 > A simple bookstore management with React/Redux
 
-
+![bookstore screenshot](./src/assets/images/bookstore-react-png.png)
 
 I developed this project as it was a required project in Microverse's React/Redux course. It deals with simple bookstore management using redux state management. With it, you can create a book, you see all available books, and you can remove a  book from the store. I used SASS to style it.
 
@@ -39,9 +39,9 @@ This app is deployed to [heroku](https://descholar-bookstore-react.herokuapp.com
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@Mugirase Emmanuel](https://github.com/descholar-ceo)
+- Twitter: [@Mugirase Emmanuel](https://twitter.com/descholar3)
+- LinkedIn: [Mugirase Emmanuel](https://linkedin.com/in/mugirase-emmanuel)
 
 ## 🤝 Contributing
 
