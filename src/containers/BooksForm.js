@@ -23,13 +23,13 @@ const BooksForm = ({ createBook }) => {
 
   return (
     <div>
-      <h2>Create a book</h2>
-      <form onSubmit={event => handleSubmit(event)}>
+      <h2 className="new-book-head">Add a new book</h2>
+      <form className="display-grid" onSubmit={event => handleSubmit(event)}>
         <input
           onChange={event => handleChange(event)}
           name="bookTitle"
           type="text"
-          placeholder="Enter the title of a book"
+          placeholder="Book title"
           value={state.bookTitle}
           required
         />
@@ -39,10 +39,10 @@ const BooksForm = ({ createBook }) => {
           value={state.bookCategory}
           required
         >
-          <option value="default">---Select the book category---</option>
+          <option value="default">---Category---</option>
           {categoriesOptions}
         </select>
-        <button type="submit">Save book</button>
+        <button className="primary-btn" type="submit">Add book</button>
       </form>
     </div>
   );

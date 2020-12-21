@@ -1,68 +1,60 @@
 # Bookstore
+![Linters](https://github.com/descholar-ceo/bookstore-react/workflows/Linters/badge.svg)
+> A simple bookstore management with React/Redux
 
-> One paragraph statement about the project.
+![bookstore screenshot](./src/assets/images/bookstore-react-png.png)
 
-> Screenshot goes here
-
-Additional description about the project and its features.
+I developed this project as it was a required project in Microverse's React/Redux course. It deals with simple bookstore management using redux state management. With it: you can create a book, you can see all the available books, and you can remove a  book from the store. I used SASS to style it.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React/Redux
+- SASS
 
 ## Live Demo
 
 [Live Demo Link](https://descholar-bookstore-react.herokuapp.com/)
+:warning: Note: :warning: If the link above doesn't work, kindly refresh the page, it will work.
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
+- [Node.js](https://nodejs.org/en/) Installed on your local computer
 
 ### Install
-
+1. Clone this Repository by running `git clone https://github.com/descholar-ceo/bookstore-react` and `cd bookstore-react`
+2. Run `yarn` or `npm install` :point_right: to install all needed dependencies
 ### Usage
-
+Run `yarn start` or `npm start`, the development server will start and the browser windows should get opened automatically, otherwise go on your browser and type `localhost:3000`, there you go
 ### Run tests
-
+No tests yet
 ### Deployment
-
+This app is deployed to [heroku](https://descholar-bookstore-react.herokuapp.com/)
+:warning: Note: :warning: If the link above doesn't work, kindly refresh the page, it will work.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Mugirase Emmanuel**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@Mugirase Emmanuel](https://github.com/descholar-ceo)
+- Twitter: [@Mugirase Emmanuel](https://twitter.com/descholar3)
+- LinkedIn: [Mugirase Emmanuel](https://linkedin.com/in/mugirase-emmanuel)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/descholar-ceo/bookstore-react/issues).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give it a :star: if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
+[Microverse](https://www.microverse.org/)
