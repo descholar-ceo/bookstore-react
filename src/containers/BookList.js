@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBookAction } from '../redux/actions';
+import CategoryFilter from '../components/CategoryFilter';
 
 const BookList = ({ books, removeBook }) => {
   const handleRemoveBook = book => removeBook(book);
@@ -14,6 +15,7 @@ const BookList = ({ books, removeBook }) => {
   ));
   return (
     <div>
+      <CategoryFilter />
       <table>
         <thead>
           <tr>
